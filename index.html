@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Project "Future Diary"</title>
+	
+	<!--Responsive web design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+	
+	<!-- Script -->
+	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>	
+	
+	<!-- Google Font -->
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" type="text/css">
+	
+  <style type="text/css">
+    /*Large desktop*/
+    @media (min-width: 980px) {
+    .linediv-l {
+    border-right: 1px white solid;
+    }
+    .linediv-r {
+    border-left: 1px white solid;
+    }
+    }
+    
+    /* Landscape phone and down*/
+    @media (max-width: 480px) {
+    .copy {
+    padding: 2.5% 10%;
+    }
+    .linediv-l {
+    border-bottom: 1px white solid;
+    }
+    .linediv-r {
+    border-top: 1px white solid;
+    }
+    }
+
+    /*All form factors*/
+    
+    /*Main body and heading*/
+    body{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    .heading, .subheading {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-align: center;
+    }
+    p.lead {
+    padding-top: 1.5%;
+    font-size: 24px;
+    line-height: 30px;
+    }
+    p {
+    font-size: 18px;
+    line-height: 24px;
+    }
+    }
+    /*Video pitch and Action*/
+    .pitch {
+    padding: 2.5% 0%;
+    }
+    .order {
+    padding: 2% 0%;
+    }
+    .actions {
+    background-color: #343434;
+    padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+    text-align: center;
+    }
+    .statistics h3, .statistics p {
+    color: white;
+    }
+    
+    /*Marketing Copy and Footer*/
+    .copy {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: justify;
+    }
+    .asset {
+    padding: 2.5% 0%;
+    }
+    .footer {
+    color: #cccccc;
+    text-align: center;
+    }
+    .footer p {
+    font-size: 11px;
+    }
+    .footer a {
+    color: #ccccff;
+    }
+   </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		
+		<a class="navbar-brand" href="#">Project Future Diary</a>
+		
+		<div class="nav-collapse collapse navbar-responsive-collapse">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<!-- Heading -->
+	<div class="row heading">
+		<div class="col-lg-12">
+			<h1>Project Future Diary</h1>
+		</div>
+	</div>
+	
+	<!-- Heading Description -->
+	<div class="row subheading">
+		<div classs="col-lg-12">
+		  <!-- Special typography from Bootstap for lead paragraph. -->
+		  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+		  <p class="lead">Control your "Future" like never before.</p>
+		</div>
+	</div>
+	
+	<!-- Video -->
+	<div class="row pitch">
+		<div class="col-lg-5 col-offset-1 video">
+			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
+		</div>
+	
+	
+		<!-- black box -->
+		<div class=" col-lg-5 actions">
+			<div class="col-lg-8 col-offset-2">
+				<div class="statistics">
+					<div class="col-lg-4">
+						<div class="linediv-l">
+							<h3>0</h3> <p>backers</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="linediv-c">
+							<h3>$0</h3> <p>of $10,000</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="linediv-r">
+							<h3>60</h3> <p>days left</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		
+			<div class="col-lg-10 col-offset-1">
+				<!-- Boostrap progress bar -->
+				<div class="thermometer progress progress-striped active">
+					<div class="progress-bar" style=" width: 60%"></div>
+					<!--div class="progress-bar progress-bar-warning" style="width: 99%"></div-->
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-offset-3 order">
+			  <!-- Standard Boostrap button, -->
+			  <button class="btn btn-success btn-large">Preorder</button>
+			</div>
+			
+			<div class="col-lg-8 col-offset-2 social">
+				<!-- Social buttons are not included in default Bootstrap -->
+				<button class="btn btn-twitter" ><i class="icon-twitter"></i>  Twitter</button>
+				<button class="btn btn-facebook" href="#" 
+					onclick="
+					window.open(
+					  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+					  'facebook-share-dialog', 
+					  'width=626,height=436'); 
+					return false;"><i class="icon-facebook">
+					</i>Facebook
+				</button>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Marketing -->
+	<div class="row section1">
+		<div class="col-lg-5 col-offset-1 asset">
+			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
+		</div>
+		<div class="col-lg-5 copy">
+			<p>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula.
+			</p>
+		</div>
+    </div>
+	
+    <div class="row section2">
+	
+		<div class="col-lg-5 col-offset-1 copy copy-right">
+			<p>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula. 
+			</p>
+		</div>
+		<div class="col-lg-5 asset">
+			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
+		</div>
+    </div>
+	
+	<div class="row section3">
+		<div class="col-lg-5 col-offset-1 asset">
+			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
+		</div>
+		
+		<div class="col-lg-5">
+			<a id="about">
+				<h2>About</h2>
+			</a>
+			<p>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula. 
+			</p>
+		</div>
+	</div>
+	
+	<!-- FAQ -->
+	<div class="row faq">
+      <div class="col-lg-10 col-offset-1">
+			<h3>FAQ</h3>
+			<div class="accordion" id="accordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" 
+							data-parent="#accordion2" href="#collapseOne">
+							What does FAQ stand for?
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body collapse">
+						<div class="accordion-inner">
+							Frequently Asked Question.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse"
+							data-parent="#accordion2" href="#collapseTwo">
+							What's a Frequently Asked Question?
+						</a>
+					</div>
+					<div id="collapseTwo" class="accordion-body collapse">
+						<div class="accordion-inner">
+							A question which is commonly asked by users.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<!-- Footer -->
+	<div class="row footer">
+      <div class="col-lg-12">
+		<p>This work is licensed under 
+		the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
+		By-SA 3.0
+		</a>, without all the cruft that otherwise be
+		put at the bottom of the page.
+		</p>
+      </div>
+    </div>
+	
+</div>  
+</body>
+</html>
