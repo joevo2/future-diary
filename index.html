@@ -181,7 +181,39 @@
 			
 			<div class="col-lg-6 col-offset-3 order">
 			  <!-- Standard Boostrap button, -->
-			  <button class="btn btn-success btn-large">Preorder</button>
+			  <!--button class="btn btn-success btn-large" href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank">Preorder</button-->
+
+			  <a data-toggle="modal" href="#myModal" class="btn btn-success btn-large">Preorder</a>
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal">
+			    <div class="modal-dialog">
+			      <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  <h4 class="modal-title">Payment Method</h4>
+				</div>
+				<div class="modal-body">
+				  <p>
+				    Credit Card Payment
+				  </p>
+				  <form action="" method="POST">
+				    <script
+				       src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+				       data-key="pk_test_htyMkyoXl3ZyYQ3dCOcdesSl"
+				       data-amount="2000"
+				       data-name="Testing"
+				       data-description="Donation ($1.00)"
+				       data-image="/128x128.png">
+				    </script>
+				  </form>
+				</div>
+				<div class="modal-footer">
+				  <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
+				  <a href="#" class="btn btn-primary">Save changes</a>
+				</div>
+			      </div><!-- /.modal-content -->
+			    </div><!-- /.modal-dialog -->
+			  </div><!-- /.modal -->
 			</div>
 			
 			<div class="col-lg-8 col-offset-2 social">
@@ -240,9 +272,37 @@
 		</div>
 	</div>
 	
+	<div class="row section3">
+	  <div class="col-lg-5 col-offset-1 asset">
+	    <img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
+	  </div>
+	  
+	  <div class="col-lg-5">
+	    <a id="about">
+	      <h2>About</h2>
+	    </a>
+	    <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula. 
+	    </p>
+	  </div>
+	</div>
+
+
+	<!-- Contact -->
+	<div class="row section4">
+	  <div class="col-lg-5 col-offset-1">
+	    <a id="contact">
+	      <h2>Contact</h2>
+	    </a> 
+	    <p>
+	      Please contact us at <a href="mailto:theberrylab@gmail.com">theberrylab@gmail.com</a>
+	    </p>
+	  </div>
+	</div>
+	
 	<!-- FAQ -->
 	<div class="row faq">
-      <div class="col-lg-10 col-offset-1">
+	  <div class="col-lg-10 col-offset-1">
 			<h3>FAQ</h3>
 			<div class="accordion" id="accordion2">
 				<div class="accordion-group">
@@ -276,16 +336,16 @@
     </div>
 	<!-- Footer -->
 	<div class="row footer">
-      <div class="col-lg-12">
-		<p>This work is licensed under 
+	  <div class="col-lg-12">
+		<p>@ 2013 The Berry Lab,This work is licensed under 
 		the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
 		By-SA 3.0
-		</a>, without all the cruft that otherwise be
-		put at the bottom of the page.
+		</a>.
 		</p>
-      </div>
-    </div>
+	  </div>
+	</div>
 	
 </div>  
 </body>
 </html>
+OBB
