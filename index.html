@@ -1,354 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Project "Future Diary"</title>
-	
-	<!--Responsive web design -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-	
-	<!-- Script -->
-	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>	
-	
-	<!-- Google Font -->
-	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" type="text/css">
-	
-  <style type="text/css">
-    /*Large desktop*/
-    @media (min-width: 980px) {
-    .linediv-l {
-    border-right: 1px white solid;
-    }
-    .linediv-r {
-    border-left: 1px white solid;
-    }
-    }
-    
-    /* Landscape phone and down*/
-    @media (max-width: 480px) {
-    .copy {
-    padding: 2.5% 10%;
-    }
-    .linediv-l {
-    border-bottom: 1px white solid;
-    }
-    .linediv-r {
-    border-top: 1px white solid;
-    }
-    }
+  <title>Future Diary - Hello from the future</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+  <!-- Script -->
+  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  <!-- Font -->
+  <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
 
-    /*All form factors*/
-    
-    /*Main body and heading*/
-    body{
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    }
-    .heading, .subheading {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    text-align: center;
-    }
-    p.lead {
-    padding-top: 1.5%;
-    font-size: 24px;
-    line-height: 30px;
-    }
-    p {
-    font-size: 18px;
-    line-height: 24px;
-    }
-    }
-    /*Video pitch and Action*/
-    .pitch {
-    padding: 2.5% 0%;
-    }
-    .order {
-    padding: 2% 0%;
-    }
-    .actions {
-    background-color: #343434;
-    padding: 3% 0%;
-    }
-    .video, .thermometer, .order, .social, .statistics {
-    text-align: center;
-    }
-    .statistics h3, .statistics p {
-    color: white;
-    }
-    
-    /*Marketing Copy and Footer*/
-    .copy {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    text-align: justify;
-    }
-    .asset {
-    padding: 2.5% 0%;
-    }
-    .footer {
-    color: #cccccc;
-    text-align: center;
-    }
-    .footer p {
-    font-size: 11px;
-    }
-    .footer a {
-    color: #ccccff;
-    }
-    /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
-    div.addthis_toolbox {
-    width:180px;
-    margin: 0 auto;
-    }
-   </style>
+  <style>
+
+      /* http://css-tricks.com/perfect-full-page-background-image/ */
+      html {
+          background: url(img/6133364748_89f2365922_o.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+
+      body {
+          padding-top: 20px;
+          font-size: 16px;
+          font-family: "Open Sans",serif;
+          background: transparent;
+      }
+
+      h1 {
+          font-family: "Abel", Arial, sans-serif;
+          font-weight: 400;
+          font-size: 40px;
+      }
+
+      /* Override B3 .panel adding a subtly transparent background */
+      .panel {
+          background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .margin-base-vertical {
+          margin: 40px 0;
+      }
+
+  </style>
+
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-static-top">
-	<div class="container">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-		
-		<a class="navbar-brand" href="#">Project Future Diary</a>
-		
-		<div class="nav-collapse collapse navbar-responsive-collapse">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#">Contact</a></li>
-		  </ul>
-		</div>
-	</div>
-</div>
 
-<div class="container">
-	<!-- Heading -->
-	<div class="row heading">
-		<div class="col-lg-12">
-			<h1>Project Future Diary</h1>
-		</div>
-	</div>
-	
-	<!-- Heading Description -->
-	<div class="row subheading">
-		<div classs="col-lg-12">
-		  <!-- Special typography from Bootstap for lead paragraph. -->
-		  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-		  <p class="lead">Control your "Future" like never before.</p>
-		</div>
-	</div>
-	
-	<!-- Video -->
-	<div class="row pitch">
-		<div class="col-lg-5 col-offset-1 video">
-			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
-		</div>
-	
-	
-		<!-- black box -->
-		<div class=" col-lg-5 actions">
-			<div class="col-lg-8 col-offset-2">
-				<div class="statistics">
-					<div class="col-lg-4">
-						<div class="linediv-l">
-							<h3>0</h3> <p>backers</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="linediv-c">
-							<h3>$0</h3> <p>of $10,000</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="linediv-r">
-							<h3>60</h3> <p>days left</p>
-						</div>
-					</div>
-				</div>
-			
-			</div>
-		
-			<div class="col-lg-10 col-offset-1">
-				<!-- Boostrap progress bar -->
-				<div class="thermometer progress progress-striped active">
-					<div class="progress-bar" style=" width: 60%"></div>
-					<!--div class="progress-bar progress-bar-warning" style="width: 99%"></div-->
-				</div>
-			</div>
-			
-			<div class="col-lg-6 col-offset-3 order">
-			  <!-- Standard Boostrap button, -->
-			  <!--button class="btn btn-success btn-large" href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank">Preorder</button-->
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-offset-3 panel">
 
-			  <a data-toggle="modal" href="#myModal" class="btn btn-success btn-large">Preorder</a>
-			  <!-- Modal -->
-			  <div class="modal fade" id="myModal">
-			    <div class="modal-dialog">
-			      <div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				  <h4 class="modal-title">Payment Method</h4>
-				</div>
-				<div class="modal-body">
-				  <p>
-				    Credit Card Payment
-				  </p>
-				  <form action="" method="POST">
-				    <script
-				       src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
-				       data-key="pk_test_htyMkyoXl3ZyYQ3dCOcdesSl"
-				       data-amount="2000"
-				       data-name="Testing"
-				       data-description="Donation ($1.00)"
-				       data-image="/128x128.png">
-				    </script>
-				  </form>
-				</div>
-				<div class="modal-footer">
-				  <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
-				  <!--a href="#" class="btn btn-primary">Save changes</a-->
-				</div>
-			      </div><!-- /.modal-content -->
-			    </div><!-- /.modal-dialog -->
-			  </div><!-- /.modal -->
-			  <a class="coinbase-button" data-code="fce814f62519b2e20be771e1905b1e8a" data-button-style="custom_large" href="https://coinbase.com/checkouts/fce814f62519b2e20be771e1905b1e8a">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-			</div>
-			
-			<div class="col-lg-8 col-offset-2 social">
-				<!-- Social buttons are not included in default Bootstrap -->
-				<!--
-				<button class="btn btn-twitter" ><i class="icon-twitter"></i>  Twitter</button>
-				<button class="btn btn-facebook" href="#" 
-					onclick="
-					window.open(
-					  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-					  'facebook-share-dialog', 
-					  'width=626,height=436'); 
-					return false;"><i class="icon-facebook">
-					</i>Facebook
-				</button>
-				-->
-				
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-				  <a class="addthis_button_facebook"></a>
-				  <a class="addthis_button_twitter"></a>
-				  <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
-				</div>
-				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51f9cdf32bee1fea"></script>
-				<!-- AddThis Button END -->
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Marketing -->
-	<div class="row section1">
-		<div class="col-lg-5 col-offset-1 asset">
-			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
-		</div>
-		<div class="col-lg-5 copy">
-			<p>
-			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula.
-			</p>
-		</div>
-    </div>
-	
-    <div class="row section2">
-	
-		<div class="col-lg-5 col-offset-1 copy copy-right">
-			<p>
-			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula. 
-			</p>
-		</div>
-		<div class="col-lg-5 asset">
-			<img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
-		</div>
-    </div>
-	
-	<div class="row section3">
-	  <div class="col-lg-5 col-offset-1 asset">
-	    <img class="img-thumbnail img-responsive" src="http://placehold.it/480x300">
-	  </div>
-	  
-	  <div class="col-lg-5">
-	    <a id="about">
-	      <h2>About</h2>
-	    </a>
-	    <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum, enim in lacinia ullamcorper, magna mi auctor augue, in faucibus dui nibh eget diam. Aliquam consectetur laoreet mauris, ut malesuada lectus ullamcorper malesuada. Aliquam elementum vestibulum turpis at sodales. Ut nec fermentum nibh. Pellentesque ullamcorper dolor in blandit tempor. Nullam eu tempus metus, quis fermentum odio. Curabitur quis consequat sapien. Phasellus non vulputate sapien. Nunc rutrum nulla varius dolor ornare, vitae dapibus eros hendrerit. Fusce sit amet volutpat nibh, et feugiat enim. Suspendisse vel augue mi. Vivamus ac elit in elit posuere convallis at at ligula. 
-	    </p>
-	  </div>
-	</div>
+              <h1 class="margin-base-vertical">The Future Diary</h1>
 
+              <p>
+              Simplify your life and say hello to the future "you".
+              </p>
+              <p>
+              Plan your future ahead and share with the person that matters to you. 
+              </p>
+              <p>
+              Schedule  event together, warn your friend about the cancelled class, follow your co-workers calender with ease, reorganised your life like never before. 
+              </p>
+              <p>
+              The Social calender that simplify your life, by The Berry Lab. 
+              </p>
+              <form class="margin-base-vertical">
+                  <p class="input-group">
+                      <span class="input-group-addon"><span class="icon-envelope"></span></span>
+                      <input type="text" class="form-control input-large" name="email" placeholder="Your email" />
+                  </p>
+                  <p class="help-block text-center"><small>We won't send you spam. Unsubscribe at any time.</small></p>
+                  <p class="text-center">
+                      <button type="submit" class="btn btn-success btn-large">Keep me posted</button>
+                  </p>
+                  </span>
+              </form>
 
-	<!-- Contact -->
-	<div class="row section4">
-	  <div class="col-lg-5 col-offset-1">
-	    <a id="contact">
-	      <h2>Contact</h2>
-	    </a> 
-	    <p>
-	      Please contact us at <a href="mailto:theberrylab@gmail.com">theberrylab@gmail.com</a>
-	    </p>
-	  </div>
-	</div>
-	
-	<!-- FAQ -->
-	<div class="row faq">
-	  <div class="col-lg-10 col-offset-1">
-			<h3>FAQ</h3>
-			<div class="accordion" id="accordion2">
-				<div class="accordion-group">
-					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" 
-							data-parent="#accordion2" href="#collapseOne">
-							What does FAQ stand for?
-						</a>
-					</div>
-					<div id="collapseOne" class="accordion-body collapse">
-						<div class="accordion-inner">
-							Frequently Asked Question.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-group">
-					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse"
-							data-parent="#accordion2" href="#collapseTwo">
-							What's a Frequently Asked Question?
-						</a>
-					</div>
-					<div id="collapseTwo" class="accordion-body collapse">
-						<div class="accordion-inner">
-							A question which is commonly asked by users.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-	<!-- Footer -->
-	<div class="row footer">
-	  <div class="col-lg-12">
-		<p>@ 2013 The Berry Lab,This work is licensed under 
-		the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
-		By-SA 3.0
-		</a>.
-		</p>
-	  </div>
-	</div>
-	
-</div>  
+              <div class="margin-base-vertical text-center">
+                  <small class="text-muted">@2013 The Berry Lab, This work is licensed under 
+                  the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
+                  By-SA 3.0
+                  </a></small>
+              </div>
+
+          </div><!-- //main content -->
+      </div><!-- //row -->
+  </div> <!-- //container -->
+
 </body>
 </html>
-
