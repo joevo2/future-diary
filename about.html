@@ -4,25 +4,44 @@
   <title>Future Diary - Hello from the future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <!-- Script -->
   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
   <!-- Font -->
   <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+  <link rel="icon" 
+      type="image/png" 
+      href="heart.png">
 
   <style>
+  
+	/* Extra small devices (phones, up to 480px) */
+	/* No media query since this is the default in Bootstrap */
 
-      /* http://css-tricks.com/perfect-full-page-background-image/ */
-      html {
-          background: url(http://i.imgur.com/PJnTqkk.jpg) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-      }
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: @screen-tablet) {
+	}
+
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: @screen-desktop) {
+	}
+
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: @screen-large-desktop) {
+	}
+
+
+	  /* http://css-tricks.com/perfect-full-page-background-image/ */
+	  html {
+		  background: url(http://i.imgur.com/PJnTqkk.jpg) no-repeat center center fixed;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	  }
 
       body {
           /*padding-top: 20px;*/
@@ -49,6 +68,7 @@
       /* Mailchimp --> */
       #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
+  
   </style>
 <script type="text/javascript">
   
@@ -65,41 +85,45 @@
 </script>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-static-top">
- <div class="container">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    
-    <a class="navbar-brand" href="/">Future Diary</a>
-    
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav">
-      <li><a href="/">Home</a></li>
-      <li class="active"><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Future Diary</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse navbar-collapse role="navigation">
+		<ul class="nav navbar-nav">
+		  <li><a href="/">Home</a></li>
+		  <li class="active"><a href="about.html">About</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul> 
+	  </div><!-- /.navbar-collapse -->
+	</div>
+</nav>
 
   <div class="container">
       <div class="row">
-          <div class="col-lg-6 col-offset-3 panel">
-
-              <h1 class="margin-base-vertical">About</h1>
+          <div class="col-md-6 col-md-offset-3 panel">
+              <h1>About</h1>
 
               <p>
               Our founding team
 			  </p>
 			  <div class="row">
-					<div class="col-lg-4 col-sm-3"> 
+					<div class="col-md-4 col-sm-3"> 
 						<img class="img-responsive img-thumbnail" src ="http://i.imgur.com/PJPoHw4.jpg">
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5">
 						<h4>Joel Yek</h4>
+						<h6>Founder</h6>
+						<br>
 						<p>
 						Currently doing Computer Science... lalalalala
 						</p>
@@ -107,11 +131,13 @@
               </div>
 			  <br>
 			  <div class="row">
-					<div class="col-lg-4 col-sm-3"> 
+					<div class="col-md-4 col-sm-3"> 
 						<img class="img-responsive img-thumbnail" src ="http://i.imgur.com/exB7x1v.jpg">
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5">
 						<h4>Allison Tu</h4>
+						<h6>Co-founder</h6>
+						<br>
 						<p>
 						Currently doing Computer Science too... lalalalala and cosplaying
 						</p>
@@ -119,23 +145,18 @@
               </div>
 			  <br>
 			  <div class="row">
-					<div class="col-lg-4 col-sm-3"> 
+					<div class="col-md-4 col-sm-3"> 
 						<img class="img-responsive img-thumbnail" src ="http://i.imgur.com/Wn3vj9z.jpg">
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5">
 						<h4>Adam Yeong</h4>
+						<h6>Co-founder, Lead Designer</h6>
+						<br>
 						<p>
 						Im the designer... lalalalala
 						</p>
 					</div>
               </div>
-              
-          <div class="margin-base-vertical text-center">
-              <small class="text-muted">@2013 The Berry Lab, This work is licensed under 
-              the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
-              By-SA 3.0
-              </a></small>
-          </div>
 
           </div><!-- //main content -->
       </div><!-- //row -->
