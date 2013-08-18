@@ -4,12 +4,12 @@
   <title>Future Diary - Hello from the future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <!-- Script -->
   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
   <!-- Font -->
   <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
 
@@ -65,29 +65,32 @@
 </script>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-static-top" role="navigation">
- <div class="container">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    
-    <a class="navbar-brand" href="#">Future Diary</a>
-    
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Future Diary</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse navbar-collapse role="navigation">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="/">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</ul> 
+		  </div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
 
   <div class="container">
       <div class="row">
-          <div class="col-lg-6 col-offset-3 panel">
+          <div class="col-md-6 col-md-offset-3 panel">
 
               <h1 class="margin-base-vertical">Future Diary</h1>
 
